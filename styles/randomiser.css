@@ -59,3 +59,37 @@ a:active {
     color: var(--text-color);
     transition: all 0.15s ease-in-out;
 }
+
+textarea {
+    width: 50%;
+    height: 25vh;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #474747;
+    border: var(--accent-color) solid 0.2rem;
+    color: white;
+    padding: 0.5rem;
+    display: block;
+
+    margin: 1rem 0;
+}
+
+input[type=submit] {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: var(--accent-text-color);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]:active {
+    background-color: var(--text-color);
+    color: var(--accent-text-color);
+    transition: all 0.15s ease-in-out;
+}
