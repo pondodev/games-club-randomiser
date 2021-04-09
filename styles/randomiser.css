@@ -70,11 +70,11 @@ textarea {
     color: white;
     padding: 0.5rem;
     display: block;
-
     margin: 1rem 0;
+    resize: none;
 }
 
-input[type=submit] {
+input[type=button] {
     background-color: var(--accent-color);
     color: var(--text-color);
     padding: 0.5rem;
@@ -83,13 +83,17 @@ input[type=submit] {
     transition: all 0.2s ease-in-out;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
     background-color: var(--accent-text-color);
     transition: all 0.2s ease-in-out;
 }
 
-input[type=submit]:active {
+input[type=button]:active {
     background-color: var(--text-color);
     color: var(--accent-text-color);
     transition: all 0.15s ease-in-out;
+}
+
+#order-display {
+    visibility: hidden;
 }

@@ -14,6 +14,8 @@
 
         <!-- our styles -->
         <link href="styles/randomiser.css" type="text/css" rel="stylesheet" />
+
+        <script src="scripts/randomiser.js"></script>
     </head>
 
     <body>
@@ -23,17 +25,27 @@
             </div>
         </header>
 
+        <noscript>
+            oh no you don't have javascript enabled :( please enable it to allow for this site to work as intended
+        </noscript>
+
         <main>
             <p>please enter the names on a separate line each below:</p>
 
-            <textarea></textarea>
+            <textarea id="names-input"></textarea>
 
-            <input type="submit" value="do the randomise thing !!" />
+            <input type="button" value="do the randomise thing !!" onclick="randomise()" />
+
+            <div id="order-display">
+                <p>the order is...</p>
+                <ol id="order-list">
+                </ol>
+            </div>
         </main>
 
         <footer>
             <hr />
-            <p>terrible website made by daniel coady. find the source code <a href="#">here</a></p>
+            <p>terrible website made by <a href="https://pondo.dev/">daniel coady</a> // find the source code <a href="#">here</a></p>
         </footer>
     </body>
 </html>
